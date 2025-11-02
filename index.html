@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Game Death Detector</title>
-</head>
-<body>
+  </head>
+  <body>
     <button id="start">Start Monitoring</button>
     <button id="stop">Stop Monitoring</button>
     <video id="screen" autoplay muted></video>
     <!-- Preload the alarm sound to ensure it's ready to play -->
-    <audio id="alarm" src="alarm_sound.mp3" preload="auto"></audio>
-    
+    <audio id="alarm" src="alarm_sound1.mp3" preload="auto"></audio>
+
     <!-- Custom Alert Modal (Hidden by default) -->
-    <div id="customAlert" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.8); color: white; padding: 20px; border-radius: 10px;">
-        <h2>Character Death Detected!</h2>
-        <p>Your character has died. The red banner was detected on the screen.</p>
-        <button id="closeAlertBtn">OK</button>
+    <div
+      id="customAlert"
+      style="
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+      "
+    >
+      <h2>Character Death Detected!</h2>
+      <p>Your character has died. The red banner was detected on the screen.</p>
+      <button id="closeAlertBtn">OK</button>
     </div>
-    
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
